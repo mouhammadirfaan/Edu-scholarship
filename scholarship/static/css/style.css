@@ -44,9 +44,9 @@ html::-webkit-scrollbar-thumb{
    background-color: var(--main-color);
 }
 
-section{
+/* section{
    padding:5rem 10%;
-}
+}  */
 
 @keyframes fadeIn {
    0%{
@@ -95,13 +95,142 @@ section{
 /* Header Sectioin Start */
 .header{
    position: sticky;
-   padding: 0PX;
-   
+   top:0; left:0; right:0;
+   z-index: 1000;
+   padding: 0px;
+   background-color:var(--web-color); 
+   box-shadow: var(--black);
+   justify-content: space-between;
+   margin: 0px;
+   margin-bottom: 0px;
+
 }
 
 .header .logo{
    height: 80px;
    width: 90px;
 }
+ 
+.header .navbar .links a{
+   color: var(--white);
+   font-size: 20px;
+   font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.header .links{
+   padding-left: 20rem;
+}
+
+.header .links .nav-link{
+   padding-left: 20px;
+}
+
+.header .links .nav-link:hover{
+   color:var(--main-color);
+}
+
+.header .navbar-toggler{
+   color:var(--white);
+   cursor: pointer;
+
+}
+.donate-butten{
+   padding-right: 15rem;
+   padding-bottom: 10px;
+}
 /* Header Sectioin end */
+
+            /* ----------------------------------------------- */
+
+/* Home section start */
+
+.home{
+   margin: 0px;
+   margin-top: 0px;
+}
+
+.home .home-bg-img{
+   background-image:url("/static/media/home-bg-img1.jpg");
+   background-repeat:no-repeat;
+   text-align: center;
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-size: cover !important;
+   background-position: center !important;
+   min-height: 45rem;
+}
+
+.home .home-bg-img .content{
+   width: 85rem;
+   display: none;
+   display: inline-block;
+
+
+}
+
+.home .home-bg-img .content span{
+   display: block;
+   font-size: 2.2rem;
+   color: var(--light-white);
+   padding-bottom: 1rem;
+   animation:fadeIn .2s linear backwards .2s;
+}
+
+.home .home-bg-img .content h3{
+   font-size: 4vw;
+   color:var(--white);
+   text-transform: uppercase;
+   line-height: 1;
+   text-shadow: var(--text-shadow);
+   padding:1rem 0;
+   animation:fadeIn .2s linear backwards .4s;
+}
+
+.home .home-bg-img .content .btn{
+   animation:fadeIn .2s linear backwards .6s;
+
+}
+
+/* Home section end */
+
+/* our services section start */
+
+.scholarship{
+   padding:5rem 10%;
+}
+
+.scholarship .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+   gap: 1.5rem;
+}
+
+.scholarship .box-container .box{
+   padding:3rem 2rem;
+   text-align: center;
+   background: var(--main-color);
+   cursor: pointer;
+}
+
+.scholarship .box-container .box:hover{
+   background: var(--black);
+}
+
+.scholarship .box-container .box img{
+   height: 6rem;
+}
+
+.scholarship .box-container .box h3{
+   color:var(--white);
+   font-size: 1.7rem;
+   padding-top: 1rem;
+}
+
+/* our services section end */
+
+
+
 
